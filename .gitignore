@@ -1,0 +1,5 @@
+# 项目排除路径
+/basic-common/target/
+/basic-iaas/auth-server/target/
+/service-job/target/
+/service-template/target/

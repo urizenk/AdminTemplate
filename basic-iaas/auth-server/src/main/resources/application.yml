@@ -1,0 +1,16 @@
+server:
+  port: 19999
+spring:
+  application:
+    name: authorization-server
+  cloud:
+    nacos:
+      discovery:
+#        写入你自己的nacos地址
+        server-addr: 127.0.0.1:8848
+  datasource:
+#    写入你自己的mysql地址
+    url: jdbc:mysql://127.0.0.1:3306/iot?useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
