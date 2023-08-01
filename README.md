@@ -1,1 +1,1 @@
-###  使用springcloud加上oauth2.0的后台管理项目模板
+# 使用springcloud + oauth2.0搭建的后台管理项目脚手架
