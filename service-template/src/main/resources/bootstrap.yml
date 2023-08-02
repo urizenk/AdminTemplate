@@ -3,9 +3,9 @@ spring:
     name: template-service
   cloud:  # nacos地址
     nacos:
-      server-addr: nacos-server:8848
+      server-addr: 127.0.0.1:8848
       config:
         file-extension: yaml
   profiles:
     active: dev
-# 拉取的配置文件的dataID =  finance-service-dev.yaml
+# 拉取的配置文件的dataID =  template-service-dev.yaml

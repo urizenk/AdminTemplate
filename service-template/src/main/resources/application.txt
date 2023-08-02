@@ -1,0 +1,60 @@
+#业务微服务的通用配置文件
+
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/coin-exchange?useSSL=false&serverTimezone=GMT%2b8
+    username: root
+    password: 123dot
+    driver-class-name: com.mysql.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:/mappers/*Mapper.xml
+#jetcache:
+#  statIntervalMinutes: 15
+#  areaInCacheName: false
+#  local:
+#    default:
+#      type: linkedhashmap
+#      keyConvertor: fastjson
+#  remote:
+#    default:
+#      type: redis
+#      keyConvertor: fastjson
+#      valueEncoder: kryo
+#      valueDecoder: kryo
+#      poolConfig:
+#        minIdle: 5
+#        maxIdle: 20
+#        maxTotal: 50
+#      host: ${spring.redis.host}
+#      port: ${spring.redis.port}
+#swagger2:
+#  basePackage: com.bjsxt.controller
+#  name: kot123778
+#  url: www.123dot.com
+#  email: 14725899@gamil.com
+#  title: 后台管理系统API接口
+#  description: 后台管理系统API接口演示
+#  version: 1.0
+#  termsOfServiceUrl: www.bjsxt.com
+doc:
+  swagger:
+    enabled: true
+    docket:
+      user:
+        title: 用户模块
+        base-package:
+      menu:
+        title: 菜单模块
+        base-package:
