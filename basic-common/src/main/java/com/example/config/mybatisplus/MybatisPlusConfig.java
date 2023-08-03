@@ -32,8 +32,7 @@ public class MybatisPlusConfig {
      */
     @Bean
     public OptimisticLockerInterceptor optimisticLockerInterceptor(){
-        OptimisticLockerInterceptor optimisticLockerInterceptor = new OptimisticLockerInterceptor();
-        return optimisticLockerInterceptor ;
+        return new OptimisticLockerInterceptor();
     }
 
     /**
@@ -41,7 +40,6 @@ public class MybatisPlusConfig {
      */
     @Bean
     public IKeyGenerator iKeyGenerator() {
-        H2KeyGenerator h2KeyGenerator = new H2KeyGenerator();
-        return h2KeyGenerator;
+        return new H2KeyGenerator();
     }
 }

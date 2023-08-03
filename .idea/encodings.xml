@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/basic-common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-iaas/auth-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-iaas/gateway-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-admin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-job/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-template/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
